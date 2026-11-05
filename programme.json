@@ -1,0 +1,107 @@
+{
+  "version": 3,
+  "notes": "Exos fixes pendant 6 semaines. Chaque exo a un id stable : il sert à retrouver l'historique des charges. Ne pas changer un id, sinon l'historique de cet exo repart de zéro. repos = secondes de repos conseillées. cibles = muscles colorés sur la carte (principal / secondaire). Ids possibles : pectoraux, epaules_avant, epaules_milieu, arriere_epaule, biceps, triceps, avant_bras, abdos, trapezes, haut_dos, dorsaux, lombaires, fessiers, quadriceps, ischios, mollets.",
+  "regles": [
+    "Finir chaque série à 0-2 reps de l'échec (plus prudent jambes, veille de foot et mercredi).",
+    "Descente contrôlée 2-3 s, étirement complet en bas, contraction en haut.",
+    "Haut de la fourchette atteint sur toutes les séries : monter la charge la séance suivante.",
+    "Machine prise : prendre l'équivalent et le signaler (pas de comparaison des charges)."
+  ],
+  "seances": {
+    "jambes": {
+      "nom": "Jambes",
+      "consigne": "Pas d'échec complet : foot dans les 48-72 h. Pas d'adducteurs/abducteurs.",
+      "exos": [
+        { "id": "presse", "nom": "Presse (amplitude profonde)", "series": 3, "reps": "10-12", "repos": 150, "muscles": "Quadriceps, fessiers", "cibles": { "principal": [ "quadriceps", "fessiers" ], "secondaire": [] } },
+        { "id": "leg_extension", "nom": "Leg extension", "series": 3, "reps": "12", "repos": 90, "muscles": "Quadriceps", "cibles": { "principal": [ "quadriceps" ], "secondaire": [] } },
+        { "id": "leg_curl_assis", "nom": "Leg curl assis", "series": 4, "reps": "10-12", "repos": 90, "muscles": "Ischio-jambiers", "note": "Ischios en position étirée", "cibles": { "principal": [ "ischios" ], "secondaire": [ "mollets" ] } },
+        { "id": "sdt_roumain", "nom": "Soulevé de terre roumain ou hip thrust", "series": 3, "reps": "8-10", "repos": 150, "muscles": "Ischio-jambiers, fessiers", "note": "Garder le même des deux chaque semaine pour comparer", "cibles": { "principal": [ "ischios", "fessiers" ], "secondaire": [ "lombaires" ] } },
+        { "id": "mollets", "nom": "Mollets debout ou assis", "series": 3, "reps": "12-15", "repos": 60, "muscles": "Mollets", "note": "2 à 3 séries. Pause en bas, étirement complet", "cibles": { "principal": [ "mollets" ], "secondaire": [] } }
+      ]
+    },
+    "push_a": {
+      "nom": "Push A",
+      "consigne": "Pecs à 1-2 reps de l'échec (Push B suit jeudi).",
+      "exos": [
+        { "id": "dc_convergente", "nom": "Développé couché machine convergente (plat)", "series": 3, "reps": "8-10", "repos": 150, "charge": "disques par côté", "muscles": "Pectoraux, triceps, avant d'épaule", "note": "Bras indépendants", "cibles": { "principal": [ "pectoraux" ], "secondaire": [ "epaules_avant", "triceps" ] } },
+        { "id": "di_convergente", "nom": "Développé incliné machine convergente", "series": 3, "reps": "8-10", "repos": 150, "charge": "disques par côté", "muscles": "Haut des pectoraux, avant d'épaule", "cibles": { "principal": [ "pectoraux", "epaules_avant" ], "secondaire": [ "triceps" ] } },
+        { "id": "dm_machine", "nom": "Développé militaire machine", "series": 3, "reps": "10", "repos": 120, "muscles": "Épaules (avant et milieu), triceps", "cibles": { "principal": [ "epaules_avant", "epaules_milieu" ], "secondaire": [ "triceps", "trapezes" ] } },
+        { "id": "elev_lat_poulie_serree", "nom": "Élévations latérales poulie (prise serrée)", "series": 3, "reps": "12-15", "repos": 75, "muscles": "Épaules (milieu)", "note": "Avec stabilité, sans élan", "cibles": { "principal": [ "epaules_milieu" ], "secondaire": [ "trapezes" ] } },
+        { "id": "ext_triceps_poulie", "nom": "Extension triceps poulie vers le bas", "series": 3, "reps": "10-12", "repos": 75, "muscles": "Triceps", "cibles": { "principal": [ "triceps" ], "secondaire": [] } }
+      ]
+    },
+    "pull_a": {
+      "nom": "Pull A",
+      "consigne": "Pas d'échec complet si foot le soir.",
+      "exos": [
+        { "id": "rowing_incline_halteres", "nom": "Rowing buste calé banc incliné haltères (coudes larges)", "series": 3, "reps": "10-12", "repos": 120, "charge": "kg par main", "muscles": "Haut du dos, trapèzes moyens, arrière d'épaule", "note": "Coudes à 60-75°, serrer les omoplates 1 s", "cibles": { "principal": [ "haut_dos", "arriere_epaule" ], "secondaire": [ "dorsaux", "biceps", "trapezes" ] } },
+        { "id": "tirage_vertical", "nom": "Tirage vertical", "series": 3, "reps": "10-12", "repos": 120, "muscles": "Grands dorsaux, biceps", "cibles": { "principal": [ "dorsaux" ], "secondaire": [ "biceps", "haut_dos" ] } },
+        { "id": "rowing_machine_poitrine", "nom": "Rowing machine poitrine calée (coudes proches)", "series": 3, "reps": "10-12", "repos": 120, "muscles": "Grands dorsaux", "note": "Coudes vers les hanches", "cibles": { "principal": [ "dorsaux" ], "secondaire": [ "haut_dos", "biceps" ] } },
+        { "id": "pullover_corde", "nom": "Pull-over poulie corde", "series": 3, "reps": "12", "repos": 75, "muscles": "Grands dorsaux", "note": "Bras quasi tendus, coudes fixes", "cibles": { "principal": [ "dorsaux" ], "secondaire": [ "triceps" ] } },
+        { "id": "curl_incline", "nom": "Curl incliné haltères", "series": 3, "reps": "10-12", "repos": 75, "charge": "kg par main", "muscles": "Biceps (longue portion)", "cibles": { "principal": [ "biceps" ], "secondaire": [ "avant_bras" ] } },
+        { "id": "curl_poulie", "nom": "Curl poulie debout", "series": 3, "reps": "12", "repos": 60, "muscles": "Biceps", "cibles": { "principal": [ "biceps" ], "secondaire": [ "avant_bras" ] } }
+      ]
+    },
+    "push_b": {
+      "nom": "Push B",
+      "consigne": "Pec fly en premier, pour ne plus dépendre de la machine.",
+      "exos": [
+        { "id": "pec_fly", "nom": "Pec fly machine", "series": 3, "reps": "12-15", "repos": 90, "muscles": "Pectoraux", "cibles": { "principal": [ "pectoraux" ], "secondaire": [ "epaules_avant" ] } },
+        { "id": "dc_halteres", "nom": "Développé couché haltères (plat)", "series": 3, "reps": "8-10", "repos": 150, "charge": "kg par main", "muscles": "Pectoraux, triceps, avant d'épaule", "cibles": { "principal": [ "pectoraux" ], "secondaire": [ "epaules_avant", "triceps" ] } },
+        { "id": "dm_machine", "nom": "Développé militaire machine", "series": 3, "reps": "10", "repos": 120, "muscles": "Épaules (avant et milieu), triceps", "cibles": { "principal": [ "epaules_avant", "epaules_milieu" ], "secondaire": [ "triceps", "trapezes" ] } },
+        { "id": "elev_lat_poulie", "nom": "Élévations latérales poulie", "series": 3, "reps": "15", "repos": 75, "muscles": "Épaules (milieu)", "cibles": { "principal": [ "epaules_milieu" ], "secondaire": [ "trapezes" ] } },
+        { "id": "arriere_epaule", "nom": "Arrière d'épaule (pec fly inversé)", "series": 3, "reps": "12-15", "repos": 75, "muscles": "Arrière d'épaule", "note": "Buste contre le dossier", "cibles": { "principal": [ "arriere_epaule" ], "secondaire": [ "haut_dos" ] } },
+        { "id": "ext_triceps_uni", "nom": "Extension triceps unilatérale poulie (vers le bas)", "series": 3, "reps": "12", "repos": 60, "muscles": "Triceps", "cibles": { "principal": [ "triceps" ], "secondaire": [] } }
+      ]
+    },
+    "pull_b": {
+      "nom": "Pull B",
+      "consigne": "",
+      "exos": [
+        { "id": "tirage_horizontal_large", "nom": "Tirage horizontal barre prise large (haut du dos)", "series": 3, "reps": "10-12", "repos": 120, "muscles": "Haut du dos, trapèzes moyens", "note": "Coudes à 60-75°, tirer vers le haut de la poitrine", "cibles": { "principal": [ "haut_dos", "arriere_epaule" ], "secondaire": [ "dorsaux", "biceps" ] } },
+        { "id": "tirage_vertical_neutre", "nom": "Tirage vertical prise neutre", "series": 2, "reps": "10-12", "repos": 120, "muscles": "Grands dorsaux, biceps", "cibles": { "principal": [ "dorsaux" ], "secondaire": [ "biceps", "haut_dos" ] } },
+        { "id": "curl_pupitre", "nom": "Curl pupitre", "series": 3, "reps": "10-12", "repos": 75, "muscles": "Biceps", "cibles": { "principal": [ "biceps" ], "secondaire": [ "avant_bras" ] } },
+        { "id": "curl_marteau", "nom": "Curl marteau", "series": 2, "reps": "12", "repos": 60, "charge": "kg par main", "muscles": "Brachial, avant-bras", "cibles": { "principal": [ "avant_bras", "biceps" ], "secondaire": [] } },
+        { "id": "barre_front", "nom": "Triceps barre au front", "series": 3, "reps": "10-12", "repos": 90, "muscles": "Triceps", "cibles": { "principal": [ "triceps" ], "secondaire": [] } },
+        { "id": "triceps_corde", "nom": "Triceps poulie corde", "series": 2, "reps": "12", "repos": 60, "muscles": "Triceps", "cibles": { "principal": [ "triceps" ], "secondaire": [] } }
+      ]
+    }
+  },
+  "semaines": {
+    "A": {
+      "lundi": "jambes",
+      "mardi": "push_a",
+      "mercredi": "pull_a",
+      "jeudi": "push_b",
+      "vendredi": "pull_b"
+    },
+    "B": {
+      "dimanche": "jambes",
+      "lundi": "push_a",
+      "mardi": "pull_a",
+      "mercredi": null,
+      "jeudi": "push_b",
+      "vendredi": "pull_b"
+    }
+  },
+  "horaires_travail": {
+    "lundi": "9h-17h",
+    "mardi": "8h-16h",
+    "mercredi": "8h-16h",
+    "jeudi": "9h-17h",
+    "vendredi": "9h-17h"
+  },
+  "creneaux_salle": {
+    "lundi": "7h (ou 17h si fatigué)",
+    "mardi": "16h-16h20",
+    "mercredi": "16h-16h20",
+    "jeudi": "7h (ou 17h si fatigué)",
+    "vendredi": "7h (ou 17h si fatigué)",
+    "dimanche": "soir (finir vers 20h-20h30)"
+  },
+  "foot": {
+    "jour": "mercredi",
+    "heure": "21h",
+    "intensite": "très élevée"
+  }
+}

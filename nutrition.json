@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "notes": "Repères fixes tirés du programme (pas d'IA). Les heures sont indicatives. {seance} est remplacé par le nom de la séance du jour. Macros des collations : ordres de grandeur.",
+  "objectifs": {
+    "proteines": "≈ 160 g (150-175 g)",
+    "calories": "2 300-2 600 kcal (à calibrer sur ton poids)",
+    "lipides": "65-80 g",
+    "eau_entrainement_ml": 3000,
+    "eau_repos_ml": 2250,
+    "creatine": "3-5 g de monohydrate, tous les jours, à n'importe quelle heure"
+  },
+  "scenarios": {
+    "matin_7h": {
+      "titre": "Salle à 7h, travail à 9h",
+      "conseil": "Mal dormi (moins de 6 h) ? Tu peux décaler à 17h. Si tu y vas quand même : garde la collation, et reste à 2 reps de l'échec.",
+      "etapes": [
+        {"heure": "6h00", "type": "collation", "titre": "Collation légère", "detail": "45 min à 1 h avant : banane + yaourt, ou 1 tranche de pain + miel. Un grand verre d'eau."},
+        {"heure": "7h00", "type": "seance", "titre": "{seance}", "detail": "Gourde de 500-750 mL pendant la séance."},
+        {"heure": "8h30", "type": "repas", "titre": "Petit-déjeuner après la séance", "detail": "Riche en protéines et glucides : 3 œufs + 2 tranches de pain complet + un fruit, ou flocons d'avoine + skyr + banane. Créatine ici, c'est simple."},
+        {"heure": "12h30", "type": "repas", "titre": "Déjeuner", "detail": "Poulet ou steak haché 5 % (150-180 g) + riz, pâtes ou pommes de terre + légumes."},
+        {"heure": "16h00", "type": "collation", "titre": "Collation", "detail": "Skyr ou fromage blanc + fruit, ou une poignée d'amandes."},
+        {"heure": "19h30", "type": "repas", "titre": "Dîner", "detail": "Protéines (steak haché, poulet, œufs, poisson) + beaucoup de légumes + une portion modérée de féculents."},
+        {"heure": "22h30", "type": "sommeil", "titre": "Coucher", "detail": "Viser 7-8 h : réveil vers 5h45-6h pour la salle."}
+      ]
+    },
+    "soir_17h": {
+      "titre": "Salle à 17h, après le travail",
+      "conseil": "Bonne option après une nuit courte : la collation de 15h30-16h est importante pour avoir de l'énergie.",
+      "etapes": [
+        {"heure": "7h30", "type": "repas", "titre": "Petit-déjeuner", "detail": "Œufs ou fromage blanc + flocons d'avoine ou pain + un fruit. Créatine."},
+        {"heure": "12h30", "type": "repas", "titre": "Déjeuner", "detail": "Poulet ou steak haché 5 % (150-180 g) + riz, pâtes ou pommes de terre + légumes."},
+        {"heure": "15h45", "type": "collation", "titre": "Collation avant la séance", "detail": "Glucides + protéines : banane + skyr, ou sandwich pain complet + blanc de poulet + compote."},
+        {"heure": "17h00", "type": "seance", "titre": "{seance}", "detail": "Gourde de 500-750 mL pendant la séance."},
+        {"heure": "18h45", "type": "repas", "titre": "Dîner après la séance", "detail": "Le gros repas du jour : steak haché ou poulet (180-200 g) + bonne portion de riz ou pâtes + légumes."},
+        {"heure": "21h30", "type": "collation", "titre": "Si faim", "detail": "Fromage blanc ou skyr : protéines qui tiennent la nuit."},
+        {"heure": "22h30", "type": "sommeil", "titre": "Coucher", "detail": "Viser 7-8 h."}
+      ]
+    },
+    "apres_travail_16h": {
+      "titre": "Salle à 16h-16h20, après le travail",
+      "conseil": "",
+      "etapes": [
+        {"heure": "7h00", "type": "repas", "titre": "Petit-déjeuner", "detail": "Avant le travail de 8h : œufs ou fromage blanc + flocons d'avoine ou pain + un fruit. Créatine."},
+        {"heure": "12h00", "type": "repas", "titre": "Déjeuner", "detail": "Poulet ou steak haché 5 % (150-180 g) + riz, pâtes ou pommes de terre + légumes."},
+        {"heure": "15h30", "type": "collation", "titre": "Collation avant la séance", "detail": "Glucides + protéines : banane + skyr, ou sandwich pain + blanc de poulet."},
+        {"heure": "16h15", "type": "seance", "titre": "{seance}", "detail": "Gourde de 500-750 mL pendant la séance."},
+        {"heure": "18h15", "type": "repas", "titre": "Repas complet après la séance", "detail": "Steak haché ou poulet (180-200 g) + riz ou pâtes + légumes."},
+        {"heure": "21h30", "type": "collation", "titre": "Si faim", "detail": "Fromage blanc ou skyr."},
+        {"heure": "22h30", "type": "sommeil", "titre": "Coucher", "detail": "Viser 7-8 h."}
+      ]
+    },
+    "mercredi_foot": {
+      "titre": "Salle à 16h + foot à 21h",
+      "conseil": "Grosse journée : glucides bien répartis, pas d'échec complet à la salle, et boire régulièrement toute la journée.",
+      "etapes": [
+        {"heure": "7h00", "type": "repas", "titre": "Petit-déjeuner", "detail": "Œufs ou fromage blanc + flocons d'avoine ou pain + un fruit. Créatine."},
+        {"heure": "12h00", "type": "repas", "titre": "Déjeuner riche en glucides", "detail": "Grosse part de féculents (riz, pâtes) + poulet ou steak haché + légumes."},
+        {"heure": "15h30", "type": "collation", "titre": "Collation avant la séance", "detail": "Banane + skyr, ou sandwich pain + blanc de poulet."},
+        {"heure": "16h15", "type": "seance", "titre": "{seance}", "detail": "Pas d'échec complet : foot ce soir."},
+        {"heure": "18h15", "type": "repas", "titre": "Repas complet", "detail": "Pâtes ou riz (bonne portion) + poulet ou œufs. Peu gras pour bien digérer avant le foot."},
+        {"heure": "20h00", "type": "collation", "titre": "Collation légère", "detail": "Banane, compote ou barre de céréales. Quelques gorgées d'eau régulièrement."},
+        {"heure": "21h00", "type": "foot", "titre": "Foot", "detail": "Intensité très élevée : gourde à portée de main."},
+        {"heure": "22h30", "type": "collation", "titre": "Après le foot", "detail": "Protéines + un peu de glucides : skyr ou fromage blanc + fruit, ou verre de lait + pain. Bien se réhydrater."},
+        {"heure": "23h15", "type": "sommeil", "titre": "Coucher", "detail": "Dès que possible : douche tiède, écrans coupés."}
+      ]
+    },
+    "foot_seul": {
+      "titre": "Foot à 21h (pas de salle)",
+      "conseil": "",
+      "etapes": [
+        {"heure": "7h00", "type": "repas", "titre": "Petit-déjeuner", "detail": "Œufs ou fromage blanc + flocons d'avoine ou pain + un fruit. Créatine."},
+        {"heure": "12h00", "type": "repas", "titre": "Déjeuner", "detail": "Poulet ou steak haché + féculents + légumes."},
+        {"heure": "16h00", "type": "collation", "titre": "Collation", "detail": "Skyr ou fromage blanc + fruit."},
+        {"heure": "18h15", "type": "repas", "titre": "Repas complet", "detail": "Pâtes ou riz (bonne portion) + poulet ou œufs. Peu gras."},
+        {"heure": "20h00", "type": "collation", "titre": "Collation légère", "detail": "Banane, compote ou barre de céréales."},
+        {"heure": "21h00", "type": "foot", "titre": "Foot", "detail": "Intensité très élevée : gourde à portée de main."},
+        {"heure": "22h30", "type": "collation", "titre": "Après le foot", "detail": "Skyr ou fromage blanc + fruit, ou verre de lait + pain."},
+        {"heure": "23h15", "type": "sommeil", "titre": "Coucher", "detail": "Dès que possible."}
+      ]
+    },
+    "dimanche_soir": {
+      "titre": "Jambes le dimanche soir",
+      "conseil": "Salle à 7h demain : finir vers 20h-20h30 et se coucher vers 22h30.",
+      "etapes": [
+        {"heure": "12h30", "type": "repas", "titre": "Déjeuner", "detail": "Poulet ou steak haché + féculents + légumes."},
+        {"heure": "16h00", "type": "collation", "titre": "Collation", "detail": "Skyr ou fromage blanc + fruit."},
+        {"heure": "17h30", "type": "repas", "titre": "Repas riche en glucides", "detail": "1 h 30 à 2 h avant : pâtes ou riz + poulet, peu gras."},
+        {"heure": "19h00", "type": "seance", "titre": "{seance}", "detail": "Pas d'échec complet. Finir vers 20h-20h30."},
+        {"heure": "20h45", "type": "repas", "titre": "Repas protéiné", "detail": "Steak haché ou œufs + pommes de terre ou riz + légumes."},
+        {"heure": "22h30", "type": "sommeil", "titre": "Coucher", "detail": "Pour être en forme à 7h."}
+      ]
+    },
+    "repos": {
+      "titre": "Jour de repos",
+      "conseil": "Garde tes protéines (≈ 160 g) même sans entraînement : c'est là que le muscle se construit. Un peu moins de féculents qu'un jour de séance.",
+      "etapes": [
+        {"heure": "Matin", "type": "repas", "titre": "Petit-déjeuner", "detail": "Œufs ou fromage blanc + pain ou flocons d'avoine + fruit. Créatine."},
+        {"heure": "Midi", "type": "repas", "titre": "Déjeuner", "detail": "Poulet ou steak haché + légumes + féculents en portion modérée."},
+        {"heure": "Après-midi", "type": "collation", "titre": "Collation", "detail": "Skyr ou fromage blanc + fruit."},
+        {"heure": "Soir", "type": "repas", "titre": "Dîner", "detail": "Protéines + beaucoup de légumes."},
+        {"heure": "22h30", "type": "sommeil", "titre": "Coucher", "detail": "Viser 7-8 h."}
+      ]
+    }
+  },
+  "collations": [
+    {"nom": "Banane + skyr (150 g)", "moments": ["avant", "après"], "p": 17, "g": 31, "l": 0, "kcal": 200},
+    {"nom": "Fromage blanc 0 % (200 g) + flocons d'avoine (30 g) + 1 c. à c. de miel", "moments": ["avant", "après"], "p": 19, "g": 32, "l": 2, "kcal": 230},
+    {"nom": "Sandwich pain complet (2 tranches) + blanc de poulet (2 tranches)", "moments": ["avant"], "p": 19, "g": 36, "l": 3, "kcal": 250},
+    {"nom": "2 œufs durs + 1 pomme", "moments": ["après", "entre les repas"], "p": 12, "g": 20, "l": 10, "kcal": 220},
+    {"nom": "Verre de lait demi-écrémé (250 mL) + 2 tranches de pain", "moments": ["après"], "p": 13, "g": 39, "l": 5, "kcal": 250},
+    {"nom": "Barre de céréales + compote", "moments": ["avant le foot"], "p": 2, "g": 40, "l": 4, "kcal": 200},
+    {"nom": "Banane seule", "moments": ["avant (7h)", "avant le foot"], "p": 1, "g": 25, "l": 0, "kcal": 105}
+  ]
+}

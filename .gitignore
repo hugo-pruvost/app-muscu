@@ -1,0 +1,8 @@
+# Fichiers personnels : ne jamais publier
+claude.md
+CLAUDE.md
+*.pdf
+
+# Outils locaux
+.claude/
+.DS_Store
